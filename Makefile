@@ -4,7 +4,7 @@ PREFIX ?= /usr/local
 sw: sw.c
 	$(CC) -Wall -Wextra -Werror sw.c -o sw
 
-install:
+install: sw
 	mkdir -p $(DESTDIR)$(PREFIX)/bin
 	cp -f sw $(DESTDIR)$(PREFIX)/bin
 	chmod 755 $(DESTDIR)$(PREFIX)/bin/sw

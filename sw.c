@@ -8,7 +8,7 @@ int main(int argc, char **argv)
 	// arg check
 	if(argc < 3) {
 		printf("usage: %s name1 name2 ...\n", argv[0]);
-		return 1;
+		exit(EXIT_FAILURE);
 	}
 	 // show names
 	printf("\nnames:\n");
@@ -18,7 +18,7 @@ int main(int argc, char **argv)
 
 	// choose
 	srand(time(NULL));
-	printf("\nthe chosen one is: %s\n\n", argv[rand() % (argc - 2) + 1]);
+	printf("\nthe chosen one is: %s\n\n", argv[rand() % (argc - 1) + 1]);
 
-	return 0;
+	exit(EXIT_SUCCESS);
 }

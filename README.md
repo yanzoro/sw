@@ -10,3 +10,6 @@ its literally less than 30 lines of code, its as suckless as you can get gng ğŸ¥
 
 run sudo make install
 
+# license
+
+this is under bsd 2 clause license

@@ -6,7 +6,7 @@ randomly chooses through arguments
 
 its literally 67 lines of code, its as suckless as you can get gng 🥀
 
-# compile?
+# compile and install?
 
 run sudo make install
 

@@ -56,7 +56,7 @@ int main(int argc, char **argv)
 
 	// choose
 	srand(time(NULL));
-	printf("the chosen one is: %s\n\n", names[rand() % (names_num - 1) + 1]);
+	printf("the chosen one is: %s\n\n", names[rand() % names_num]);
 
 	exit(EXIT_SUCCESS);
 }

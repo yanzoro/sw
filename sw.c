@@ -3,6 +3,7 @@
 #include <time.h>
 #include <unistd.h>
 #include <stdbool.h>
+#include <ctype.h>
 
 void usage(char **argv);
 
@@ -37,9 +38,25 @@ int main(int argc, char **argv)
 		printf("%s\n", names[i]);
 	}
 
+	printf("\n"); // to seperate and make it look better
+
+	// ask_flag
+	if(ask_flag) {
+		for(;;) {
+			char c;
+			printf("would you like to start? [y/n]: ");
+			fflush(stdout); // to instantly print it
+			c = getchar();
+			if(tolower(c) == 'y')
+				break;
+			else
+				exit(EXIT_SUCCESS);
+		}
+	}
+
 	// choose
 	srand(time(NULL));
-	printf("\nthe chosen one is: %s\n\n", names[rand() % (names_num - 1) + 1]);
+	printf("the chosen one is: %s\n\n", names[rand() % (names_num - 1) + 1]);
 
 	exit(EXIT_SUCCESS);
 }

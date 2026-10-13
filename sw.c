@@ -26,16 +26,20 @@ int main(int argc, char **argv)
 				usage(argv);
 		}
 	}
+
+	char **names = argv + optind;
+	int names_num;
+	for(names_num = 0; names[names_num] != NULL; names_num++);
 	
 	 // show names
 	printf("\nnames:\n");
-	for(int i = 1; i < argc; i++) {
-		printf("%s\n", argv[i]);
+	for(int i = 0; i < names_num; i++) {
+		printf("%s\n", names[i]);
 	}
 
 	// choose
 	srand(time(NULL));
-	printf("\nthe chosen one is: %s\n\n", argv[rand() % (argc - 1) + 1]);
+	printf("\nthe chosen one is: %s\n\n", names[rand() % (names_num - 1) + 1]);
 
 	exit(EXIT_SUCCESS);
 }

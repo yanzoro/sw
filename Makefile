@@ -2,7 +2,7 @@ CC ?= cc
 PREFIX ?= /usr/local
 
 sw: sw.c
-	$(CC) -Wall -Wextra sw.c -o sw
+	$(CC) -Wall -Wextra -Werror sw.c -o sw
 
 install: sw
 	mkdir -p $(DESTDIR)$(PREFIX)/bin

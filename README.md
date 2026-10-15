@@ -6,6 +6,13 @@ randomly chooses through arguments
 
 its literally 67 lines of code, its as suckless as you can get gng 🥀
 
+# how to use it?
+
+heres the usage:  
+
+usage: sw \[-a\] name1 name2 ...  
+-a: ask before choosing
+
 # compile and install?
 
 run sudo make install

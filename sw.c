@@ -62,6 +62,6 @@ int main(int argc, char **argv)
 }
 
 void usage(char **argv) {
-		printf("usage: %s name1 name2 ...\n", argv[0]);
+		printf("usage: %s [-a] name1 name2 ...\n-a: ask before choosing\n", argv[0]);
 		exit(EXIT_FAILURE);
 }

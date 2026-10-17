@@ -15,14 +15,19 @@ int main(int argc, char **argv)
 	}
 
 	// flags
-	bool ask_flag = false;
+	bool ask_flag = false, seed_flag = false;
+
 	char c;
 	
-	while((c = getopt(argc, argv, "a")) != -1) {
+	while((c = getopt(argc, argv, "as:")) != -1) {
 		switch(c) {
 			case 'a':
 				ask_flag = true;
 				break;
+			case 's':
+				seed_flag = true;
+				break;
+				
 			default:
 				usage(argv);
 		}

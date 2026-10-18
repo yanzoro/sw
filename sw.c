@@ -15,14 +15,21 @@ int main(int argc, char **argv)
 	}
 
 	// flags
-	bool ask_flag = false;
+	bool ask_flag = false, seed_flag = false;
+
 	char c;
+	unsigned seed;
 	
-	while((c = getopt(argc, argv, "a")) != -1) {
+	while((c = getopt(argc, argv, "as:")) != -1) {
 		switch(c) {
 			case 'a':
 				ask_flag = true;
 				break;
+			case 's':
+				seed_flag = true;
+				seed = atoi(optarg);
+				break;
+				
 			default:
 				usage(argv);
 		}
@@ -55,13 +62,13 @@ int main(int argc, char **argv)
 	}
 
 	// choose
-	srand(time(NULL));
+	srand(seed_flag ? seed : time(NULL));
 	printf("the chosen one is: %s\n\n", names[rand() % names_num]);
 
 	exit(EXIT_SUCCESS);
 }
 
 void usage(char **argv) {
-		printf("usage: %s [-a] name1 name2 ...\n-a: ask before choosing\n", argv[0]);
+		printf("usage: %s [-a] [-s seed] name1 name2 ...\n-a: ask before choosing\n-s seed: set seed to seed\n", argv[0]);
 		exit(EXIT_FAILURE);
 }

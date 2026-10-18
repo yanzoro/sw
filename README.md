@@ -10,8 +10,9 @@ its literally less than 80 lines of code, its as suckless as you can get gng ðŸ¥
 
 heres the usage:  
 
-usage: sw \[-a\] name1 name2 ...  
--a: ask before choosing
+usage: sw \[-a\] \[-s seed\] name1 name2 ...  
+-a: ask before choosing  
+-s seed: set seed to seed
 
 # compile and install?
 

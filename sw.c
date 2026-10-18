@@ -18,6 +18,7 @@ int main(int argc, char **argv)
 	bool ask_flag = false, seed_flag = false;
 
 	char c;
+	unsigned seed;
 	
 	while((c = getopt(argc, argv, "as:")) != -1) {
 		switch(c) {
@@ -26,6 +27,7 @@ int main(int argc, char **argv)
 				break;
 			case 's':
 				seed_flag = true;
+				seed = atoi(optarg);
 				break;
 				
 			default:

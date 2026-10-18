@@ -62,7 +62,7 @@ int main(int argc, char **argv)
 	}
 
 	// choose
-	srand(time(NULL));
+	srand(seed_flag ? seed : time(NULL));
 	printf("the chosen one is: %s\n\n", names[rand() % names_num]);
 
 	exit(EXIT_SUCCESS);

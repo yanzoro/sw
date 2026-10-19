@@ -4,7 +4,7 @@ randomly chooses through arguments
 
 # why use it?
 
-its literally less than 80 lines of code, its as suckless as you can get gng 🥀
+the only source file is literally less than 80 lines of code, its as suckless as you can get gng 🥀
 
 # how to use it?
 

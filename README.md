@@ -16,7 +16,7 @@ usage: sw \[-a\] \[-s seed\] name1 name2 ...
 
 # compile and install?
 
-run sudo make install
+run sudo make install (if ur using doas then run doas make install)
 
 # license
 

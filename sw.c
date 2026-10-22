@@ -31,7 +31,7 @@ int main(int argc, char **argv)
 	}
 	
 	// arg check
-	if(argc < 3) {
+	if(argc <= optind) {
 		usage(argv);
 	}
 

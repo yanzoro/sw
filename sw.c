@@ -9,11 +9,6 @@ void usage(char **argv);
 
 int main(int argc, char **argv)
 {
-	// arg check
-	if(argc < 3) {
-		usage(argv);
-	}
-
 	// flags
 	bool ask_flag = false, seed_flag = false;
 
@@ -34,6 +29,12 @@ int main(int argc, char **argv)
 				usage(argv);
 		}
 	}
+	
+	// arg check
+	if(argc < 3) {
+		usage(argv);
+	}
+
 
 	char **names = argv + optind;
 	int names_num;

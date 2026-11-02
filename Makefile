@@ -1,8 +1,8 @@
 CC ?= cc
 PREFIX ?= /usr/local
 
-sw: sw.c
-	$(CC) -Wall -Wextra sw.c -o sw
+sw: src/sw.c
+	$(CC) -Wall -Wextra src/sw.c -o sw
 
 install: sw
 	mkdir -p $(DESTDIR)$(PREFIX)/bin

@@ -20,4 +20,4 @@ run sudo make install (if ur using doas then run doas make install)
 
 # license
 
-this is under bsd 2 clause license
+this is under x11 license

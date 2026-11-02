@@ -21,3 +21,7 @@ run sudo make install (if ur using doas then run doas make install)
 # license
 
 this is under x11 license
+
+# repositories
+
+this project is in [github](https://github.com/yanzoro/sw) and [codeberg](https://codeberg.org/yanzoro/sw)

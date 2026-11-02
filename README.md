@@ -2,26 +2,36 @@
 
 randomly chooses through arguments
 
-# why use it?
+## why use it?
 
-its literally less than 80 sloc, its as suckless as you can get gng 🥀
+its literally less than 80 sloc, its as suckless as you can get gng �
 
-# how to use it?
+## how to use it?
 
-heres the usage:  
+heres the usage:
 
-usage: sw \[-a\] \[-s seed\] name1 name2 ...  
--a: ask before choosing  
+usage: sw \[-a\] \[-s seed\] name1 name2 ...
+-a: ask before choosing
 -s seed: set seed to seed
 
-# compile and install?
+## requirements
 
-run sudo make install (if ur using doas then run doas make install)
+the project requires:
 
-# license
+* a unix-like system
+* a compiler that supports c99 or above
+* the make utility
+
+## compile and install?
+
+run `sudo make install`
+if you are using doas, run `doas make install` instead.
+
+## license
 
 this is under x11 license
 
-# repositories
+## repositories
 
 this project is in [github](https://github.com/yanzoro/sw) and [codeberg](https://codeberg.org/yanzoro/sw)
+

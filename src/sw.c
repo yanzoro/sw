@@ -10,7 +10,7 @@ void usage(char **argv);
 
 int main(int argc, char **argv)
 {
-	// flags
+	/* flags */
 	bool ask_flag = false, seed_flag = false;
 
 	char c;
@@ -31,7 +31,7 @@ int main(int argc, char **argv)
 		}
 	}
 	
-	// arg check
+	/* arg check */
 	if(argc <= optind) {
 		usage(argv);
 	}
@@ -41,15 +41,15 @@ int main(int argc, char **argv)
 	int names_num;
 	for(names_num = 0; names[names_num] != NULL; names_num++);
 	
-	 // show names
+	 /* show names */
 	printf("\nnames:\n");
 	for(int i = 0; i < names_num; i++) {
 		printf("%s\n", names[i]);
 	}
 
-	printf("\n"); // to seperate and make it look better
+	printf("\n");
 
-	// ask_flag
+	/* ask_flag */
 	if(ask_flag) {
 		for(;;) {
 			char c;
@@ -63,7 +63,7 @@ int main(int argc, char **argv)
 		}
 	}
 
-	// choose
+	/* choose */
 	srand(seed_flag ? seed : time(NULL));
 	printf("the chosen one is: %s\n\n", names[rand() % names_num]);
 

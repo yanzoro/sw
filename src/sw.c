@@ -14,6 +14,11 @@ for license details check the LICENSE file.
 
 void usage(char **argv);
 
+void usage(char **argv) {
+		printf("usage: %s [-a] [-s seed] name1 name2 ...\n-a: ask before choosing\n-s seed: set seed to seed\n", argv[0]);
+		exit(EXIT_FAILURE);
+}
+
 int main(int argc, char **argv)
 {
 	/* flags */
@@ -74,9 +79,4 @@ int main(int argc, char **argv)
 	printf("the chosen one is: %s\n\n", names[rand() % names_num]);
 
 	exit(EXIT_SUCCESS);
-}
-
-void usage(char **argv) {
-		printf("usage: %s [-a] [-s seed] name1 name2 ...\n-a: ask before choosing\n-s seed: set seed to seed\n", argv[0]);
-		exit(EXIT_FAILURE);
 }

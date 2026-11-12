@@ -66,7 +66,7 @@ main(int argc, char **argv)
 		for(;;) {
 			char c;
 			printf("would you like to start? [y/n]: ");
-			fflush(stdout); // to instantly print it
+			fflush(stdout); /* to instantly print it */
 			c = getchar();
 			if(tolower(c) == 'y')
 				break;

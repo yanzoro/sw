@@ -14,12 +14,14 @@ for license details check the LICENSE file.
 
 static void usage(char **argv);
 
-void usage(char **argv) {
+void
+usage(char **argv) {
 		printf("usage: %s [-a] [-s seed] name1 name2 ...\n-a: ask before choosing\n-s seed: set seed to seed\n", argv[0]);
 		exit(EXIT_FAILURE);
 }
 
-int main(int argc, char **argv)
+int
+main(int argc, char **argv)
 {
 	/* flags */
 	bool ask_flag = false, seed_flag = false;

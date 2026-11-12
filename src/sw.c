@@ -29,7 +29,7 @@ main(int argc, char **argv)
 	char c;
 	unsigned seed;
 	
-	while((c = getopt(argc, argv, "as:")) != -1) {
+	while((c = getopt(argc, argv, "as:")) > -1) {
 		switch(c) {
 			case 'a':
 				ask_flag = true;

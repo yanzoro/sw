@@ -9,7 +9,6 @@ for license details check the LICENSE file.
 #include <stdlib.h>
 #include <time.h>
 #include <unistd.h>
-#include <stdbool.h>
 #include <ctype.h>
 
 static void usage(char **argv);
@@ -24,7 +23,7 @@ int
 main(int argc, char **argv)
 {
 	/* flags */
-	bool ask_flag = false, seed_flag = false;
+	int ask_flag = 0, seed_flag = 0;
 
 	char c;
 	unsigned seed;
@@ -32,10 +31,10 @@ main(int argc, char **argv)
 	while((c = getopt(argc, argv, "as:")) > -1) {
 		switch(c) {
 			case 'a':
-				ask_flag = true;
+				ask_flag = 1;
 				break;
 			case 's':
-				seed_flag = true;
+				seed_flag = 1;
 				seed = atoi(optarg);
 				break;
 				

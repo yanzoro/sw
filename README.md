@@ -4,7 +4,7 @@ randomly chooses through arguments
 
 ## why use it?
 
-its literally less than 80 sloc, its as suckless as you can get gng �
+its literally around 80 sloc, its as suckless as you can get gng �
 
 ## how to use it?
 

@@ -55,7 +55,8 @@ main(int argc, char **argv)
 	
 	/* show names */
 	printf("\nnames:\n");
-	for(int i = 0; i < names_num; i++) {
+	int i;
+	for(i = 0; i < names_num; i++) {
 		printf("%s\n", names[i]);
 	}
 

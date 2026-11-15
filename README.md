@@ -19,7 +19,7 @@ usage: sw \[-a\] \[-s seed\] name1 name2 ...
 the project requires:
 
 * a unix-like system
-* a compiler that supports c99 or above
+* a compiler that supports C89 or above
 * the make utility
 
 ## compile and install?

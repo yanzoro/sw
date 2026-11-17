@@ -10,9 +10,9 @@ its literally around 80 sloc, its as suckless as you can get gng �
 
 heres the usage:
 
-usage: sw \[-a\] \[-s seed\] name1 name2 ...
--a: ask before choosing
--s seed: set seed to seed
+usage: sw \[-a\] \[-s seed\] name1 name2 ...  
+-a: ask before choosing  
+-s seed: set seed to seed  
 
 ## requirements
 

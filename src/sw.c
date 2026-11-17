@@ -37,9 +37,8 @@ main(int argc, char **argv)
 				seed_flag = 1;
 				seed = atoi(optarg);
 				break;
-				
 			default:
-				usage(argv);
+				exit(EXIT_FAILURE);
 		}
 	}
 	

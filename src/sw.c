@@ -15,7 +15,7 @@ static void usage(char **argv, FILE *stream, int exit_type);
 
 void
 usage(char **argv, FILE *stream, int exit_type) {
-		fprintf(stream, "usage: %s [-a] [-s seed] name1 name2 ...\n-a: ask before choosing\n-s seed: set seed to seed\n", argv[0]);
+		fprintf(stream, "usage: %s [-a] [-s seed] [-h] name1 name2 ...\n-a: ask before choosing\n-s seed: set seed to seed\n-h: print usage\n", argv[0]);
 		exit(exit_type);
 }
 

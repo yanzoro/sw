@@ -13,6 +13,7 @@ heres the usage:
 usage: sw \[-a\] \[-s seed\] name1 name2 ...  
 -a: ask before choosing  
 -s seed: set seed to seed  
+-h: print usage
 
 ## requirements
 

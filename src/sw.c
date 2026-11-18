@@ -28,7 +28,7 @@ main(int argc, char **argv)
 	char c;
 	unsigned seed;
 	
-	while((c = getopt(argc, argv, "as:")) > -1) {
+	while((c = getopt(argc, argv, "has:")) > -1) {
 		switch(c) {
 			case 'a':
 				ask_flag = 1;
@@ -36,6 +36,9 @@ main(int argc, char **argv)
 			case 's':
 				seed_flag = 1;
 				seed = atoi(optarg);
+				break;
+			case 'h':
+				usage(argv, stdout, EXIT_SUCCESS);
 				break;
 			default:
 				exit(EXIT_FAILURE);
